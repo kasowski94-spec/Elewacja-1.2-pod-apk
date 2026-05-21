@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ElewacjaPro — Instrukcja instalacji Android</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0d14;--card:#1c1f2e;--acc:#e8541a;--acc2:#f5a623;--grn:#3ecf8e;--txt:#eef0f6;--mut:#6b7491;--brd:#252840;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--txt);font-family:'Inter',sans-serif;min-height:100vh;padding:0 0 60px;}
+.hero{background:linear-gradient(135deg,#1a1d27,#0f1219);padding:40px 20px 32px;text-align:center;border-bottom:1px solid var(--brd);}
+.logo{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;background:linear-gradient(135deg,var(--acc),var(--acc2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:6px;}
+.subtitle{color:var(--mut);font-size:.9rem;}
+.wrap{max-width:680px;margin:0 auto;padding:28px 20px;}
+.method{background:var(--card);border:1px solid var(--brd);border-radius:16px;padding:22px;margin-bottom:20px;}
+.method-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(232,84,26,.15);color:var(--acc);border:1px solid rgba(232,84,26,.3);border-radius:20px;padding:4px 12px;font-size:.72rem;font-weight:700;margin-bottom:14px;}
+.method-badge.green{background:rgba(62,207,142,.12);color:var(--grn);border-color:rgba(62,207,142,.25);}
+.method h2{font-family:'Syne',sans-serif;font-size:1.15rem;font-weight:700;margin-bottom:10px;}
+.steps{display:flex;flex-direction:column;gap:10px;margin-top:14px;}
+.step{display:flex;gap:12px;align-items:flex-start;}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--acc);color:#fff;font-weight:700;font-size:.82rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.step-body{flex:1;}
+.step-title{font-weight:600;font-size:.9rem;margin-bottom:2px;}
+.step-desc{font-size:.78rem;color:var(--mut);line-height:1.5;}
+.step-img{margin-top:7px;background:rgba(255,255,255,.04);border:1px solid var(--brd);border-radius:8px;padding:8px 12px;font-size:.75rem;color:var(--mut);font-style:italic;}
+.note{background:rgba(245,166,35,.07);border-left:3px solid var(--acc2);border-radius:0 9px 9px 0;padding:10px 13px;font-size:.78rem;color:var(--mut);margin:14px 0;}
+.note strong{color:var(--txt);}
+.code{background:#0f1219;border:1px solid var(--brd);border-radius:8px;padding:10px 14px;font-family:monospace;font-size:.82rem;color:var(--acc2);margin:8px 0;}
+.highlight{background:linear-gradient(135deg,rgba(62,207,142,.1),rgba(91,156,246,.07));border:1px solid var(--grn);border-radius:12px;padding:16px;margin-bottom:20px;text-align:center;}
+.highlight .big{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:800;color:var(--grn);}
+.highlight p{font-size:.8rem;color:var(--mut);margin-top:5px;}
+.btn-dl{display:inline-block;background:var(--acc);color:#fff;text-decoration:none;border-radius:12px;padding:13px 28px;font-size:.95rem;font-weight:700;margin:8px 4px;}
+.feat-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px;}
+.feat{background:rgba(255,255,255,.03);border:1px solid var(--brd);border-radius:10px;padding:11px 13px;}
+.feat .icon{font-size:1.4rem;margin-bottom:4px;}
+.feat .name{font-size:.79rem;font-weight:600;margin-bottom:2px;}
+.feat .desc{font-size:.68rem;color:var(--mut);}
+@media(max-width:420px){.feat-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="logo">ElewacjaPro</div>
+  <div class="subtitle">Instrukcja instalacji na Androidzie — krok po kroku</div>
+</div>
+<div class="wrap">
+
+  <div class="highlight">
+    <div class="big">📱 Instalacja w 30 sekund</div>
+    <p>Otwórz plik index.html przez lokalny serwer lub hosting — Chrome zapyta automatycznie o instalację</p>
+  </div>
+
+  <!-- METODA 1: Najłatwiejsza -->
+  <div class="method">
+    <div class="method-badge green">✅ NAJŁATWIEJSZA METODA</div>
+    <h2>Metoda 1 — Hosting na Google Drive / GitHub Pages</h2>
+    <p style="font-size:.8rem;color:var(--mut);margin-bottom:4px">Wgraj pliki na darmowy hosting — otwórz link na telefonie — zainstaluj. Działa zawsze.</p>
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><div class="step-body">
+        <div class="step-title">Wgraj folder elewacja-pwa na GitHub Pages</div>
+        <div class="step-desc">Utwórz repozytorium na github.com → wgraj wszystkie pliki → Settings → Pages → Deploy from main branch</div>
+        <div class="step-img">👉 Darmowe. Adres: twoja-nazwa.github.io/elewacja-pwa/</div>
+      </div></div>
+      <div class="step"><div class="step-num">2</div><div class="step-body">
+        <div class="step-title">Otwórz link w Chrome na Androidzie</div>
+        <div class="step-desc">Wpisz adres lub zeskanuj QR kod</div>
+      </div></div>
+      <div class="step"><div class="step-num">3</div><div class="step-body">
+        <div class="step-title">Kliknij "Zainstaluj aplikację" w Chrome</div>
+        <div class="step-desc">Chrome wyświetli baner na dole ekranu lub opcję w menu (⋮) → "Dodaj do ekranu głównego"</div>
+      </div></div>
+    </div>
+  </div>
+
+  <!-- METODA 2: Lokalny serwer -->
+  <div class="method">
+    <div class="method-badge">📲 METODA LOKALNA (bez internetu)</div>
+    <h2>Metoda 2 — Lokalny serwer HTTP na Androidzie</h2>
+    <p style="font-size:.8rem;color:var(--mut);margin-bottom:4px">Nie wymaga internetu ani komputera. Serwer działa z telefonu.</p>
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><div class="step-body">
+        <div class="step-title">Zainstaluj "Simple HTTP Server" z Google Play</div>
+        <div class="step-desc">Aplikacja: "Simple HTTP Server" (pnig.de) — darmowa, 3 MB</div>
+        <div class="step-img">Alternatywa: "kWS - Android Web Server" lub "HFS HTTP File Server"</div>
+      </div></div>
+      <div class="step"><div class="step-num">2</div><div class="step-body">
+        <div class="step-title">Skopiuj folder elewacja-pwa na telefon</div>
+        <div class="step-desc">Podłącz telefon USB do komputera → przeciągnij folder do Pobrane/ lub Documents/</div>
+      </div></div>
+      <div class="step"><div class="step-num">3</div><div class="step-body">
+        <div class="step-title">W Simple HTTP Server wskaż folder i wystartuj</div>
+        <div class="step-desc">Wybierz katalog z plikami → kliknij Start → serwer działa na localhost:8080</div>
+      </div></div>
+      <div class="step"><div class="step-num">4</div><div class="step-body">
+        <div class="step-title">Otwórz Chrome: http://localhost:8080/index.html</div>
+        <div class="step-desc">Chrome wykryje PWA i zaproponuje instalację</div>
+      </div></div>
+      <div class="step"><div class="step-num">5</div><div class="step-body">
+        <div class="step-title">Zainstaluj → gotowe!</div>
+        <div class="step-desc">Po instalacji aplikacja działa offline bez serwera — dane zapisane lokalnie (IndexedDB)</div>
+      </div></div>
+    </div>
+  </div>
+
+  <!-- METODA 3: PC + ADB -->
+  <div class="method">
+    <div class="method-badge">💻 METODA Z KOMPUTEREM</div>
+    <h2>Metoda 3 — Lokalny serwer z komputera (sieć WiFi)</h2>
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><div class="step-body">
+        <div class="step-title">Uruchom serwer z folderu elewacja-pwa</div>
+        <div class="step-desc">W terminalu/wierszu poleceń w folderze z plikami:</div>
+        <div class="code">python -m http.server 8080</div>
+        <div class="step-desc">lub Node.js:</div>
+        <div class="code">npx serve .</div>
+      </div></div>
+      <div class="step"><div class="step-num">2</div><div class="step-body">
+        <div class="step-title">Sprawdź IP komputera w sieci WiFi</div>
+        <div class="code">Windows: ipconfig → IPv4 np. 192.168.1.100<br>Mac/Linux: ifconfig | grep inet</div>
+      </div></div>
+      <div class="step"><div class="step-num">3</div><div class="step-body">
+        <div class="step-title">Na telefonie otwórz Chrome z adresem komputera</div>
+        <div class="step-desc">Telefon i komputer muszą być w tej samej sieci WiFi</div>
+        <div class="code">http://192.168.1.100:8080/index.html</div>
+      </div></div>
+      <div class="step"><div class="step-num">4</div><div class="step-body">
+        <div class="step-title">Menu Chrome (⋮) → Zainstaluj aplikację</div>
+        <div class="step-desc">Lub kliknij baner który pojawi się automatycznie</div>
+      </div></div>
+    </div>
+    <div class="note"><strong>HTTPS wymagane dla pełnego PWA.</strong> Dla localhost działa bez HTTPS. Dla IP w sieci — Chrome może ostrzegać, kliknij "Kontynuuj mimo to".</div>
+  </div>
+
+  <!-- Features -->
+  <div class="method">
+    <h2 style="margin-bottom:4px">Co zyskujesz po instalacji</h2>
+    <p style="font-size:.78rem;color:var(--mut);margin-bottom:0">Aplikacja zachowuje się jak natywna — bez paska Chrome</p>
+    <div class="feat-grid">
+      <div class="feat"><div class="icon">📵</div><div class="name">Tryb offline</div><div class="desc">Działa bez internetu po pierwszym uruchomieniu</div></div>
+      <div class="feat"><div class="icon">💾</div><div class="name">IndexedDB</div><div class="desc">Projekty zapisane lokalnie — nie giną po zamknięciu</div></div>
+      <div class="feat"><div class="icon">📲</div><div class="name">Ikonka na pulpicie</div><div class="desc">Otwiera się jak natywna aplikacja</div></div>
+      <div class="feat"><div class="icon">🔄</div><div class="name">Auto-aktualizacja</div><div class="desc">Service Worker pobiera nową wersję w tle</div></div>
+      <div class="feat"><div class="icon">📤</div><div class="name">Eksport JSON</div><div class="desc">Backup i przenoszenie projektów między urządzeniami</div></div>
+      <div class="feat"><div class="icon">👆</div><div class="name">Gesty swipe</div><div class="desc">Przesuwaj między zakładkami gestem palca</div></div>
+      <div class="feat"><div class="icon">🔔</div><div class="name">Powiadomienia</div><div class="desc">Toast notifications o stanie połączenia</div></div>
+      <div class="feat"><div class="icon">📱</div><div class="name">Safe area</div><div class="desc">Obsługa notcha i okrągłych narożników ekranu</div></div>
+    </div>
+  </div>
+
+  <div class="note"><strong>Uwaga:</strong> Funkcja "Aktualizuj ceny z internetu" wymaga połączenia z internetem (wywołuje Claude AI). Wszystkie pozostałe funkcje działają offline.</div>
+
+</div>
+</body>
+</html>
