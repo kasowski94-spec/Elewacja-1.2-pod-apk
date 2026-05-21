@@ -1,0 +1,1 @@
+# Elewacja-1.2-pod-apk
